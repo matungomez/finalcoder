@@ -1,0 +1,701 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #8a2be2;
+}
+
+button:hover {
+    background-color: #6521a5;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: #ffd311;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+
+header a:hover {
+    color: #6821aa;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../media/fondocrucero.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: #ffffff;
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+#somos-pacific .container {
+    text-align: center;
+    padding: 200px 12px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(56, 5, 85, 1) 30%, rgba(7, 39, 96, 1) 51%, rgba(44, 9, 121, 1) 78%, rgba(0, 61, 255, 1) 100%);
+
+}
+
+#nuestras-ofertas {
+    background-color: #0a1a2a;
+    color: #ffffff;
+    text-align: center;
+}
+
+#nuestras-ofertas .container {
+    padding: 150px 12px;
+}
+
+#nuestras-ofertas h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestras-ofertas p {
+    display: none;
+}
+
+#nuestras-ofertas .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            #00000080,
+            #00000080), url("../media/aviones.jpg");
+
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            #00000080,
+            #00000080), url("../media/fondo\ hoteles.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            #00000080,
+            #00000080), url("../media/tourtailandia.jpg");
+
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0d2033;
+    color: #ffffff;
+    height: 80vh;
+}
+
+#final h2 {
+    font-size: 9vw;
+}
+
+#final button {
+    font-size: 5vw;
+}
+
+footer {
+    background-color: #e6e6e6;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+@media (min-width: 320px) {
+    #somos-pacific .texto {
+
+        color: #ffffff;
+    }
+}
+
+@media (min-width: 850px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #somos-pacific .container {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #somos-pacific .texto {
+        width: 50%;
+        max-width: 600px;
+        font-size: large;
+        color: #ffffff;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-pacific h2 {
+        margin-top: 0px;
+    }
+
+    #somos-pacific .img-container {
+        background-image: url("../media/LOGO.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestras-ofertas .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestras-ofertas p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestras-ofertas h2 {
+        font-size: 4em;
+    }
+
+    #nuestras-ofertas h3 {
+        margin-top: 0;
+    }
+
+    #nuestras-ofertas .carta {
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: #323232;
+        box-shadow: 2px 2px 10px #00000080;
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(0deg,
+                #00000080,
+                #00000080), url("../media/aviones.jpg");
+
+    }
+
+    .carta:nth-child(2) {
+        background-image: linear-gradient(0deg,
+                #00000080,
+                #00000080), url("../media/fondo\ hoteles.jpg");
+    }
+
+    .carta:nth-child(3) {
+        background-image: linear-gradient(0deg,
+                #00000080,
+                #00000080), url("../media/tourtailandia.jpg");
+
+    }
+
+    #caracteristicas {
+        background-image: url("/media/fondoweb3.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container {
+        text-align: initial;
+    }
+
+    #caracteristicas ul {
+        margin-left: 100px;
+    }
+
+    #final h2 {
+        font-size: 5em;
+    }
+
+    #final button {
+        font-size: 2em;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 800px);
+    }
+
+    #somos-pacific .container {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(56, 5, 85, 1) 30%, rgba(7, 39, 96, 1) 51%, rgba(44, 9, 121, 1) 78%, rgba(0, 61, 255, 1) 100%);
+
+    }
+
+
+}
+
+.contact {
+    background-image: linear-gradient(#00000080, #00000080), url("../media/fondoweb3.jpg");
+    background-size: cover;
+}
+
+.main-5 {
+    display: grid;
+    margin: 50px 50px 50px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-5 .form {
+    font-size: x-large;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    background-color: #db5656;
+}
+
+.titulo-animado {
+    padding: 2em 5em;
+    font: normal 50px Montserrat, sans-serif;
+    color: #fffbfb;
+}
+
+.titulo-animado p {
+    height: 65px;
+    float: left;
+    margin-right: 0.3em;
+}
+
+.titulo-animado b {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+    top: 40px;
+}
+
+.titulo-animado .texto {
+    display: inline-block;
+    color: #1964f0;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    -webkit-animation: move 5s;
+    -moz-animation: move 5s;
+    -ms-animation: move 5s;
+    -o-animation: move 5s;
+    animation: move 5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@-moz-keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@-o-keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+.aereos {
+    background-image: linear-gradient(#00000080, #00000080), url("../media/aviones fondo.jpg");
+    background-size: cover;
+}
+
+#main-table {
+    margin: 250px auto;
+    width: 600px;
+}
+
+#main-table table {
+    width: 100%;
+    background-color: #ffffff;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+#main-table table th,
+#main-table table td {
+    padding: 20px;
+}
+
+#main-table table thead {
+    background-color: #055dcf;
+    border-bottom: solid 5px #0f362d;
+    color: #ffffff;
+}
+
+#main-table table tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+.section-aereos {
+    display: flex;
+    text-align: center;
+    font-size: x-large;
+    margin: auto;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.circuitos {
+    background-image: linear-gradient(#00000080, #00000080), url("../media/circuitos.JPG");
+    background-size: contain;
+}
+
+.main-circuitos {
+    padding: 25px;
+    font-size: x-large;
+    font-family: fredoka one;
+}
+
+.main-circuitos {
+    padding: 25px;
+    font-size: x-large;
+    font-family: fredoka one;
+}
+
+.destinos {
+    background-image: linear-gradient(#00000080, #00000080), url("../media/fondo hoteles.jpg");
+    background-size: cover;
+}
+
+.main-destinos {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    background: #CCC;
+    margin-top: 100px;
+    border-top: 6px solid #778899;
+}
+
+.main-destinos img {
+    width: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title-destinos {
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: fredoka one;
+}
+
+.title-main-destinos {
+    text-align: center;
+    color: #CCC;
+    font-family: fredoka one;
+    padding: 50px;
+}
+
+.text-destinos {
+    font-size: x-large;
+    font-style: inherit;
+}
+
+footer {
+    background-color: #e6e6e6;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: #646464;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer .container {
+    justify-content: flex-end;
+}
+
+.site {
+    display: flex;
+    background-color: #323232;
+    color: #CCC;
+    justify-content: center;
+}

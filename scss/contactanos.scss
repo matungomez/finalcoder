@@ -1,0 +1,183 @@
+.contact {
+    background-image: linear-gradient(#00000080, #00000080), url("../media/fondoweb3.jpg");
+    background-size: cover;
+}
+
+.main-5 {
+    display: grid;
+    margin: 50px 50px 50px 50px;
+    align-items: center;
+    justify-content: center;
+
+    .form {
+        font-size: x-large;
+        margin: 0 auto;
+        width: 500px;
+        height: 500px;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 15px;
+        background-color: #db5656;
+    }
+
+}
+
+.titulo-animado {
+    padding: 2em 5em;
+    font: normal 50px Montserrat, sans-serif;
+    color: rgb(255, 251, 251);
+
+    p {
+        height: 65px;
+        float: left;
+        margin-right: 0.3em;
+    }
+
+    b {
+        float: left;
+        overflow: hidden;
+        position: relative;
+        height: 50px;
+        top: 40px;
+    }
+
+}
+
+.titulo-animado .texto {
+    display: inline-block;
+    color: #1964f0;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+
+
+
+    -webkit-animation: move 5s;
+    -moz-animation: move 5s;
+    -ms-animation: move 5s;
+    -o-animation: move 5s;
+    animation: move 5s;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@-moz-keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@-o-keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: -50px;
+    }
+
+    40% {
+        top: -100px;
+    }
+
+    60% {
+        top: -150px;
+    }
+
+    80% {
+        top: -200px;
+    }
+}

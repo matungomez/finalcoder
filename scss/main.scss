@@ -1,0 +1,38 @@
+@import "contactanos";
+@import "aereos";
+@import "circuitos";
+@import "destinos";
+
+
+
+
+footer {
+    background-color: #e6e6e6;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: #646464;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+footer .container {
+    justify-content: flex-end;
+}
+
+
+.site {
+    display: flex;
+    background-color: #323232;
+    color: #CCC;
+    justify-content: center;
+}
